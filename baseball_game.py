@@ -315,6 +315,7 @@ def main():
                         play_game = False
                         break
                     else:
+                        print("Wrong Input, Input again")
                         continue
             continue
 
