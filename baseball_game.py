@@ -67,43 +67,43 @@ def is_between_100_and_999(user_input_number):
     return result
 
 
-    def is_duplicated_number(three_digit):
-        # '''
-        # Input:
-        #   - three_digit : 문자열로 된 세자리 양의 정수 값
-        #                   문자열로 된 세자리 양의 정수값의 입력이 보장된다.
-        # Output:
-        #   - three_digit 정수로 변환하였을 경우 중복되는 수가 있으면 True,
-        #     그렇지 않을 경우는 False
-        #   ex) 117 - True, 123 - False, 103 - False, 113 - True
-        # Examples:
-        #   >>> import baseball_game as bg
-        #   >>> bg.is_duplicated_number("551")
-        #   True
-        #   >>> bg.is_duplicated_number("402")
-        #   False
-        #   >>> bg.is_duplicated_number("472")
-        #   False
-        #   >>> bg.is_duplicated_number("100")
-        #   True
-        # '''
-        # ===Modify codes below=============
-        # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
+def is_duplicated_number(three_digit):
+    # '''
+    # Input:
+    #   - three_digit : 문자열로 된 세자리 양의 정수 값
+    #                   문자열로 된 세자리 양의 정수값의 입력이 보장된다.
+    # Output:
+    #   - three_digit 정수로 변환하였을 경우 중복되는 수가 있으면 True,
+    #     그렇지 않을 경우는 False
+    #   ex) 117 - True, 123 - False, 103 - False, 113 - True
+    # Examples:
+    #   >>> import baseball_game as bg
+    #   >>> bg.is_duplicated_number("551")
+    #   True
+    #   >>> bg.is_duplicated_number("402")
+    #   False
+    #   >>> bg.is_duplicated_number("472")
+    #   False
+    #   >>> bg.is_duplicated_number("100")
+    #   True
+    # '''
+    # ===Modify codes below=============
+    # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-        # *******METHOD 1********
-        # 이건 순서 랜덤이라 X
-        # result = three_digit == ''.join(set(three_digit)) 
+    # *******METHOD 1********
+    # 이건 순서 랜덤이라 X
+    # result = three_digit == ''.join(set(three_digit)) 
 
-        three_digit = list(three_digit)
-        new_list = []
-        for num in three_digit:
-            if num not in new_list:
-                new_list.append(num)
-        
-        result = not (three_digit == new_list)
+    three_digit = list(three_digit)
+    new_list = []
+    for num in three_digit:
+        if num not in new_list:
+            new_list.append(num)
+    
+    result = not (three_digit == new_list)
 
-        # ==================================
-        return result
+    # ==================================
+    return result
 
 
 def is_validated_number(user_input_number):
