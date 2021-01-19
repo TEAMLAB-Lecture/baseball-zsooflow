@@ -31,7 +31,7 @@ def is_digit(user_input_number):
     # '''
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
-    result = (user_input_number == int(user_input_number))
+    result = (user_input_number == str(int(user_input_number)))
 
     return result
 
@@ -299,7 +299,6 @@ def main():
         #exit
         if user_input == "0":
             break
-
         if not is_validated_number(user_input):
             print("Wrong Input, Input again")
             continue
